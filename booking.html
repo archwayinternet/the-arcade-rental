@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book Now – The Arcade Rental</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="alternate icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="google-site-verification" content="VptBFiOfYPE2ogj45kjB-mc92TCY7VqkBvI5ADcIv5E">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNQ35H216B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LNQ35H216B');
+</script>
+<style>
+@font-face{font-family:'Press Start 2P';src:url('fonts/press-start-2p.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Rubik';src:url('fonts/rubik-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Rubik';src:url('fonts/rubik-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Rubik';src:url('fonts/rubik-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+</style>
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="marquee"><div class="wrap mast">
+<a class="logo" href="index.html"><svg class="pac" width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M50 50 L100 22 A50 50 0 1 0 100 78 Z" fill="#ffd23f"/></svg>
+<span class="px t">THE ARCADE RENTAL<span class="s">FUN FOR EVERYONE</span></span></a>
+<button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitenav" aria-label="Open menu"><span class="bars"></span></button>
+<nav id="sitenav" aria-label="Main"><a href="index.html">HOME</a><a href="who-we-serve.html">WHO WE SERVE</a><a href="games.html">GAMES</a><a href="rates.html">RATES</a><a href="faq.html">FAQ</a><a href="careers.html">CAREERS</a><a href="contact.html">CONTACT</a><a class="buy" href="booking.html">BOOK NOW ▸</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+<p class="eyebrow">CHECKOUT ▸ RESERVE YOUR DATE</p>
+<h1>BOOK YOUR ARCADE</h1>
+<p class="sub">Pick a package, add extras, and reserve your date with a 50% deposit — right from this page.</p>
+<p class="note">Pricing shown is suggested starter pricing modeled on comparable regional providers. Steve should confirm final numbers, and connect a real PayPal/Stripe/Square account before taking live payments (see the note near the payment buttons below).</p>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<h2>1. CHOOSE YOUR PACKAGE</h2>
+<h3 style="margin-bottom:14px">SINGLE DAY ▸ 3-HOUR EVENTS</h3>
+<div class="tiers"><label class="tier" data-key="lvl1" data-price="299" data-hours="3" data-name="Level 1" data-units="2" onclick="selectTier(this)">
+<input type="radio" name="tier" value="lvl1">
+<div class="tname">LEVEL 1</div>
+<div class="tmeta">2 game units · 3 hours</div>
+<div class="tprice">$299</div>
+</label><label class="tier" data-key="lvl2" data-price="379" data-hours="3" data-name="Level 2" data-units="3" onclick="selectTier(this)">
+<input type="radio" name="tier" value="lvl2">
+<div class="tname">LEVEL 2</div>
+<div class="tmeta">3 game units · 3 hours</div>
+<div class="tprice">$379</div>
+</label><label class="tier" data-key="lvl3" data-price="459" data-hours="3" data-name="Level 3" data-units="4" onclick="selectTier(this)">
+<input type="radio" name="tier" value="lvl3">
+<div class="tname">LEVEL 3</div>
+<div class="tmeta">4 game units · 3 hours</div>
+<div class="tprice">$459</div>
+</label><label class="tier" data-key="lvl4" data-price="539" data-hours="3" data-name="Level 4" data-units="5" onclick="selectTier(this)">
+<input type="radio" name="tier" value="lvl4">
+<div class="tname">LEVEL 4</div>
+<div class="tmeta">5 game units · 3 hours</div>
+<div class="tprice">$539</div>
+</label><label class="tier" data-key="lvl5" data-price="619" data-hours="3" data-name="Level 5" data-units="6" onclick="selectTier(this)">
+<input type="radio" name="tier" value="lvl5">
+<div class="tname">LEVEL 5</div>
+<div class="tmeta">6 game units · 3 hours</div>
+<div class="tprice">$619</div>
+</label><label class="tier" data-key="lvl6" data-price="699" data-hours="3" data-name="Level 6" data-units="7" onclick="selectTier(this)">
+<input type="radio" name="tier" value="lvl6">
+<div class="tname">LEVEL 6</div>
+<div class="tmeta">7 game units · 3 hours</div>
+<div class="tprice">$699</div>
+</label><label class="tier featured" data-key="full" data-price="999" data-hours="3" data-name="Full Arcade Trailer" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="full">
+<div class="tname">FULL ARCADE TRAILER</div>
+<div class="tmeta">15 game units · 3 hours</div>
+<div class="tprice">$999</div>
+</label></div>
+
+<h3 style="margin:34px 0 14px">MULTI-DAY ▸ TRAILER STAYS ON SITE</h3>
+<p class="muted" style="font-size:14px;margin-bottom:14px">For festivals, fair week, VBS, camps, and long weekends. Per-day cost drops the longer we're there.</p>
+<div class="tiers"><label class="tier" data-key="md2" data-price="1599" data-hours="16" data-name="2-Day Weekend" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="md2">
+<div class="tname">2-DAY WEEKEND</div>
+<div class="tmeta">All 15 games · 2 days on site</div>
+<div class="tprice">$1,599</div>
+<div class="tmeta" style="margin-top:8px">Friday evening through Sunday. Festivals, church weekends, reunions.</div>
+</label><label class="tier" data-key="md3" data-price="2049" data-hours="24" data-name="3-Day Event" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="md3">
+<div class="tname">3-DAY EVENT</div>
+<div class="tmeta">All 15 games · 3 days on site</div>
+<div class="tprice">$2,049</div>
+<div class="tmeta" style="margin-top:8px">Long weekends, fair week, multi-day tournaments.</div>
+</label><label class="tier featured" data-key="md5" data-price="2799" data-hours="40" data-name="5-Day (Mon–Fri)" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="md5">
+<div class="tname">5-DAY (MON–FRI)</div>
+<div class="tmeta">All 15 games · 5 days on site</div>
+<div class="tprice">$2,799</div>
+<div class="tmeta" style="margin-top:8px">VBS, school spirit week, summer camp sessions.</div>
+</label><label class="tier" data-key="md7" data-price="3399" data-hours="56" data-name="Full Week" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="md7">
+<div class="tname">FULL WEEK</div>
+<div class="tmeta">All 15 games · 7 days on site</div>
+<div class="tprice">$3,399</div>
+<div class="tmeta" style="margin-top:8px">County fairs, week-long camps, grand-opening weeks.</div>
+</label></div>
+
+<h3 style="margin:34px 0 14px">ANNUAL ▸ BOOK THE WHOLE YEAR</h3>
+<p class="muted" style="font-size:14px;margin-bottom:14px">For schools, churches, and community centers running the same events every year. Lock in your dates and a better per-event rate.</p>
+<div class="tiers"><label class="tier" data-key="yr4" data-price="1599" data-hours="3" data-name="Quarterly Plan" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="yr4">
+<div class="tname">QUARTERLY PLAN</div>
+<div class="tmeta">4 events per year</div>
+<div class="tprice">$1,599</div>
+<div class="tmeta" style="margin-top:8px">Four events a year — one per quarter. About $400 per event.</div>
+</label><label class="tier featured" data-key="yr6" data-price="2249" data-hours="3" data-name="Season Pass" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="yr6">
+<div class="tname">SEASON PASS</div>
+<div class="tmeta">6 events per year</div>
+<div class="tprice">$2,249</div>
+<div class="tmeta" style="margin-top:8px">Six events a year. About $375 per event.</div>
+</label><label class="tier" data-key="yr12" data-price="4199" data-hours="3" data-name="Monthly Plan" data-units="15" onclick="selectTier(this)">
+<input type="radio" name="tier" value="yr12">
+<div class="tname">MONTHLY PLAN</div>
+<div class="tmeta">12 events per year</div>
+<div class="tprice">$4,199</div>
+<div class="tmeta" style="margin-top:8px">One event every month. About $350 per event — best per-event rate.</div>
+</label></div>
+
+<div class="split">
+<div>
+<div class="panel">
+<h3>2. ADD-ONS</h3>
+<div class="field" style="margin-bottom:18px">
+  <label>EXTRA HOURS (+$40/hr)</label>
+  <div class="stepper">
+    <button type="button" onclick="stepHours(-1)">−</button>
+    <span id="extraHoursVal">0</span>
+    <button type="button" onclick="stepHours(1)">+</button>
+  </div>
+</div>
+<div class="checkline"><input type="checkbox" id="attendant" onchange="recalc()"><label style="font-size:15px;font-family:'Rubik',sans-serif;letter-spacing:0;color:var(--text)" for="attendant">Add on-site attendant ($50 for 3 hrs / $75 for 4+ hrs)</label></div>
+<div class="checkline"><input type="checkbox" id="clawfill" onchange="recalc()"><label style="font-size:15px;font-family:'Rubik',sans-serif;letter-spacing:0;color:var(--text)" for="clawfill">Have us fill the claw machine ($10 for 20 prizes)</label></div>
+
+<div class="field" style="margin-top:18px">
+  <label for="miles">ESTIMATED ONE-WAY DISTANCE FROM 46555 (MILES)</label>
+  <input type="number" id="miles" value="0" min="0" max="60" onchange="recalc()" oninput="recalc()">
+  <p class="muted" style="font-size:13px;margin:8px 0 0">Free within 25 miles. Beyond that, $2/mile each way applies to the extra distance. We serve up to 60 miles from 46555.</p>
+</div>
+</div>
+
+<div class="panel" style="margin-top:24px">
+<h3>3. YOUR INFORMATION</h3>
+<form id="bookForm" class="formgrid" onsubmit="return submitBooking(event)">
+  <input type="text" id="bookForm_botcheck" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+  <div class="field"><label for="b_name">FULL NAME</label><input type="text" id="b_name" required></div>
+  <div class="field"><label for="b_email">EMAIL</label><input type="email" id="b_email" required></div>
+  <div class="field"><label for="b_phone">PHONE</label><input type="tel" id="b_phone" required></div>
+  <div class="field"><label for="b_type">EVENT / BUSINESS TYPE</label>
+    <select id="b_type"><option value="General event">General event</option><option value="Churches">Churches</option><option value="Schools">Schools</option><option value="Community Centers">Community Centers</option><option value="Daycares">Daycares</option><option value="Restaurants">Restaurants</option><option value="Salons &amp; Barbershops">Salons &amp; Barbershops</option><option value="Libraries">Libraries</option><option value="Dentists">Dentists</option><option value="Doctors &amp; Medical Offices">Doctors &amp; Medical Offices</option><option value="Family Reunions">Family Reunions</option><option value="Birthday Parties">Birthday Parties</option><option value="Church Youth Camps">Church Youth Camps</option><option value="Weddings">Weddings</option><option value="Coffee Shops">Coffee Shops</option><option value="Realtor Open Houses">Realtor Open Houses</option><option value="Office Waiting Rooms">Office Waiting Rooms</option><option value="Airbnbs &amp; Rentals">Airbnbs &amp; Rentals</option></select>
+  </div>
+  <div class="field"><label for="b_date">EVENT DATE</label><input type="date" id="b_date" required></div>
+  <div class="field"><label for="b_time">START TIME</label><input type="text" id="b_time" placeholder="e.g. 5:00 PM"></div>
+  <div class="field full"><label for="b_address">EVENT ADDRESS</label><input type="text" id="b_address" placeholder="Street, City, State"></div>
+  <div class="field full"><label for="b_notes">GAME PICKS / NOTES</label><textarea id="b_notes" placeholder="Which games would you like? Anything else we should know?"></textarea></div>
+</form>
+</div>
+</div>
+
+<div>
+<div class="summary">
+<h3>ORDER SUMMARY</h3>
+<div class="sumline"><span id="sumTierName">No package selected</span><span id="sumTierPrice">$0</span></div>
+<div class="sumline"><span>Extra hours</span><span id="sumHours">$0</span></div>
+<div class="sumline"><span>On-site attendant</span><span id="sumAttendant">$0</span></div>
+<div class="sumline"><span>Claw machine fill</span><span id="sumClaw">$0</span></div>
+<div class="sumline"><span>Delivery</span><span id="sumDelivery">$0</span></div>
+<div class="sumline total"><span>TOTAL</span><span id="sumTotal">$0</span></div>
+<div class="sumline deposit"><span>50% DEPOSIT DUE TODAY</span><span id="sumDeposit">$0</span></div>
+<div class="paybtns">
+  <button class="btn btn-p" onclick="submitBooking(event)">RESERVE &amp; PAY DEPOSIT ▸</button>
+</div>
+<div id="bookStatus" class="note" style="display:none"></div>
+<div id="payBox" style="display:none;margin-top:18px;border:3px solid var(--yellow);padding:18px;background:var(--ink)">
+  <h3 style="margin-bottom:10px">STEP 2 ▸ PAY YOUR DEPOSIT</h3>
+  <p style="font-size:14px;margin-bottom:14px">Your request is in. Pay the deposit below to lock in your date — we'll confirm by email once it lands.</p>
+  <div id="payLinks"></div>
+  <p class="muted" style="font-size:13px;margin:12px 0 0">Prefer to pay another way, or have a question first? Call or text 574-527-5765.</p>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section class="cta"><div class="wrap">
+<p class="big">READY PLAYER ONE?</p>
+<p class="contactline">Contact <strong>Steve Hanford</strong> · <a href="mailto:TheArcadeRental@gmail.com">TheArcadeRental@gmail.com</a> · call/text <a href="tel:5745275765">574-527-5765</a></p>
+<p style="margin:22px 0 0"><a class="btn btn-y" href="booking.html">BOOK &amp; PAY DEPOSIT ▸</a><a class="btn btn-o" href="contact.html">ASK A QUESTION</a></p>
+</div></section>
+<footer><div class="wrap">
+<p class="px" style="font-size:9px;color:var(--yellow)">WHO WE SERVE</p>
+<ul class="flist"><li><a href="churches.html">Churches</a></li><li><a href="schools.html">Schools</a></li><li><a href="community-centers.html">Community Centers</a></li><li><a href="daycares.html">Daycares</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="salons.html">Salons &amp; Barbershops</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="dentists.html">Dentists</a></li><li><a href="doctors.html">Doctors &amp; Medical Offices</a></li><li><a href="family-reunions.html">Family Reunions</a></li><li><a href="birthdays.html">Birthday Parties</a></li><li><a href="church-youth-camps.html">Church Youth Camps</a></li><li><a href="weddings.html">Weddings</a></li><li><a href="coffee-shops.html">Coffee Shops</a></li><li><a href="open-houses.html">Realtor Open Houses</a></li><li><a href="waiting-rooms.html">Office Waiting Rooms</a></li><li><a href="airbnbs.html">Airbnbs &amp; Rentals</a></li></ul>
+<p>Based in North Webster, Indiana — serving Kokomo, Fort Wayne, Indianapolis and surrounding communities.</p>
+<p>© 2026 The Arcade Rental · Steve Hanford · <a href="mailto:TheArcadeRental@gmail.com">TheArcadeRental@gmail.com</a> · 574-527-5765</p>
+</div></footer><script>
+(function(){
+  var btn = document.querySelector('.navtoggle');
+  var nav = document.getElementById('sitenav');
+  if(!btn || !nav) return;
+  function setOpen(open){
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function(){
+    setOpen(!nav.classList.contains('open'));
+  });
+  // Tapping a link navigates, so close the panel behind it.
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A') setOpen(false);
+  });
+  // Escape closes and returns focus to the button.
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){ setOpen(false); btn.focus(); }
+  });
+  // If the window grows to desktop width, clear the mobile state.
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 760) setOpen(false);
+  });
+})();
+</script><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+
+var W3F_KEY = "df3a08b6-33fc-40b0-8533-03bb55202ac2";
+var EJS_PUBLIC   = "ozlngs3HBVvH0U4Z7";
+var EJS_SERVICE  = "service_svwtbil";
+var EJS_TEMPLATE = "template_joazi37";
+
+function val(id){ var el=document.getElementById(id); return el ? el.value.trim() : ''; }
+
+// Turn the field object into a readable block for the backup email path.
+function fieldsToText(fields){
+  var out = [];
+  for (var k in fields) {
+    if (fields[k]) out.push(k.replace(/_/g,' ').toUpperCase() + ': ' + fields[k]);
+  }
+  return out.join('\n');
+}
+
+function w3fOk(status, formId){
+  status.textContent = 'Thanks! Your message has been sent — we usually reply within a day.';
+  var f = document.getElementById(formId); if (f) f.reset();
+}
+function w3fFail(status){
+  status.textContent = 'Sorry, that did not send. Please email TheArcadeRental@gmail.com or call/text 574-527-5765.';
+}
+
+// BACKUP PATH — only runs if Web3Forms did not go through.
+function sendViaEmailJS(status, formId, subject, fields, replyTo){
+  if (!EJS_PUBLIC || !EJS_SERVICE || !EJS_TEMPLATE || typeof emailjs === 'undefined') {
+    w3fFail(status); return;
+  }
+  emailjs.send(EJS_SERVICE, EJS_TEMPLATE, {
+    subject: subject,
+    from_name: fields.name || fields.customer_name || fields.applicant_name || 'Website visitor',
+    reply_to: replyTo || 'TheArcadeRental@gmail.com',
+    message: fieldsToText(fields)
+  }, { publicKey: EJS_PUBLIC }).then(
+    function(){ w3fOk(status, formId); },
+    function(){ w3fFail(status); }
+  );
+}
+
+function w3fSend(statusId, formId, subject, fields, replyTo){
+  var status = document.getElementById(statusId);
+  status.style.display='block';
+
+  // Honeypot: real people leave this empty; bots fill it in.
+  if (val(formId + '_botcheck')) { return false; }
+
+  var haveW3F = W3F_KEY && W3F_KEY.indexOf('PASTE-YOUR') !== 0;
+  var haveEJS = EJS_PUBLIC && EJS_SERVICE && EJS_TEMPLATE;
+
+  if (!haveW3F && !haveEJS) {
+    status.textContent = 'This form is not connected yet. Please email TheArcadeRental@gmail.com or call/text 574-527-5765.';
+    return false;
+  }
+
+  status.textContent = 'Sending...';
+
+  // No Web3Forms key? Go straight to the backup.
+  if (!haveW3F) { sendViaEmailJS(status, formId, subject, fields, replyTo); return false; }
+
+  var payload = { access_key: W3F_KEY, subject: subject, from_name: 'The Arcade Rental Website' };
+  for (var k in fields) { if (fields[k]) payload[k] = fields[k]; }
+  if (replyTo) payload.replyto = replyTo;
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(data){
+    if (data.success) { w3fOk(status, formId); }
+    else { sendViaEmailJS(status, formId, subject, fields, replyTo); }
+  })
+  .catch(function(){ sendViaEmailJS(status, formId, subject, fields, replyTo); });
+  return false;
+}
+
+var SQUARE_LINK  = "";
+var STRIPE_LINK  = "https://buy.stripe.com/6oU00jcbbeiKbwm5j557W00";
+var STRIPE_TIER_LINKS = {"lvl1": "", "lvl2": "", "lvl3": "", "lvl4": "", "lvl5": "", "lvl6": "", "full": "", "md2": "", "md3": "", "md5": "", "md7": "", "yr4": "", "yr6": "", "yr12": ""};
+var ZELLE_HANDLE = "";
+var PAYPAL_ME    = "";
+var VENMO_USER   = "";
+var CASHAPP_USER = "";
+
+var state = { tierKey:'', tierPrice:0, tierName:'No package selected', baseHours:0, extraHours:0 };
+var EXTRA_HOUR_RATE = 40;
+var ATTENDANT_3 = 50;
+var ATTENDANT_4 = 75;
+var CLAW_FEE = 10;
+var FREE_RADIUS = 25;
+var RATE_MI = 2;
+var DEPOSIT_PCT = 50;
+
+function selectTier(el){
+  document.querySelectorAll('.tier').forEach(function(t){t.classList.remove('sel');});
+  el.classList.add('sel');
+  el.querySelector('input').checked = true;
+  state.tierKey = el.dataset.key || '';
+  state.tierPrice = parseFloat(el.dataset.price);
+  state.tierName = el.dataset.name;
+  state.baseHours = parseFloat(el.dataset.hours);
+  recalc();
+}
+function stepHours(delta){
+  state.extraHours = Math.max(0, state.extraHours + delta);
+  document.getElementById('extraHoursVal').textContent = state.extraHours;
+  recalc();
+}
+function recalc(){
+  var hours = state.baseHours + state.extraHours;
+  var extraHourCost = state.extraHours * EXTRA_HOUR_RATE;
+  var attendant = document.getElementById('attendant').checked ? (hours >= 4 ? ATTENDANT_4 : ATTENDANT_3) : 0;
+  var claw = document.getElementById('clawfill').checked ? CLAW_FEE : 0;
+  var miles = parseFloat(document.getElementById('miles').value) || 0;
+  var billable = Math.max(0, miles - FREE_RADIUS);
+  var delivery = billable * RATE_MI * 2;
+
+  var total = state.tierPrice + extraHourCost + attendant + claw + delivery;
+  var deposit = total * (DEPOSIT_PCT/100);
+
+  document.getElementById('sumTierName').textContent = state.tierName;
+  document.getElementById('sumTierPrice').textContent = '$' + state.tierPrice.toFixed(0);
+  document.getElementById('sumHours').textContent = '$' + extraHourCost.toFixed(0);
+  document.getElementById('sumAttendant').textContent = '$' + attendant.toFixed(0);
+  document.getElementById('sumClaw').textContent = '$' + claw.toFixed(0);
+  document.getElementById('sumDelivery').textContent = '$' + delivery.toFixed(0);
+  document.getElementById('sumTotal').textContent = '$' + total.toFixed(0);
+  document.getElementById('sumDeposit').textContent = '$' + deposit.toFixed(0);
+}
+function submitBooking(e){
+  e.preventDefault();
+  var status = document.getElementById('bookStatus');
+  status.style.display='block';
+  if(state.tierPrice === 0){
+    status.textContent='Please choose a package above first.';
+    return false;
+  }
+  var name = val('b_name'), email = val('b_email'), phone = val('b_phone'), date = val('b_date');
+  if(!name || !email || !phone || !date){
+    status.textContent='Please fill in your name, email, phone, and event date.';
+    return false;
+  }
+  var pkg = document.getElementById('sumTierName').textContent;
+  var total = document.getElementById('sumTotal').textContent;
+  var deposit = document.getElementById('sumDeposit').textContent;
+
+  var ok = w3fSend('bookStatus', 'bookForm', 'NEW BOOKING REQUEST — ' + pkg + ' — ' + date, {
+    customer_name: name, email: email, phone: phone,
+    package: pkg, total: total, deposit_due: deposit,
+    event_type: val('b_type'), event_date: date, start_time: val('b_time'),
+    event_address: val('b_address'),
+    extra_hours: String(state.extraHours),
+    attendant: document.getElementById('attendant').checked ? 'Yes' : 'No',
+    claw_fill: document.getElementById('clawfill').checked ? 'Yes' : 'No',
+    miles_one_way: val('miles'),
+    game_picks_notes: val('b_notes')
+  }, email);
+
+  // Reveal payment options with the deposit amount filled in.
+  showPayment(deposit);
+  return ok;
+}
+function copyAmount(btn, amt){
+  navigator.clipboard.writeText(amt).then(function(){
+    var old = btn.textContent;
+    btn.textContent = 'COPIED!';
+    setTimeout(function(){ btn.textContent = old; }, 2000);
+  });
+}
+function showPayment(depositText){
+  var box = document.getElementById('payBox');
+  if(!box) return;
+  var amt = (depositText || '').replace(/[^0-9.]/g,'');
+  if(!amt || parseFloat(amt) <= 0) return;
+
+  var links = document.getElementById('payLinks');
+  links.innerHTML = '';
+
+  // Big, unmissable amount — customers type this into Square/Zelle themselves.
+  var amtBox = document.createElement('div');
+  amtBox.style.cssText = 'background:var(--panel2);border:2px solid var(--cyan);padding:16px;margin-bottom:18px;text-align:center';
+  amtBox.innerHTML = '<div style="font-size:13px;color:var(--dim);letter-spacing:1px">AMOUNT DUE TODAY</div>'
+    + '<div style="font-family:\'Press Start 2P\',monospace;font-size:26px;color:var(--yellow);margin:10px 0">$' + amt + '</div>';
+  var copyBtn = document.createElement('button');
+  copyBtn.className = 'copybtn';
+  copyBtn.textContent = 'COPY AMOUNT';
+  copyBtn.onclick = function(){ copyAmount(copyBtn, amt); };
+  amtBox.appendChild(copyBtn);
+  links.appendChild(amtBox);
+
+  function option(title, note, label, href, style){
+    var row = document.createElement('div');
+    row.style.cssText = 'border:2px solid var(--line);padding:16px;margin-bottom:12px;background:var(--panel)';
+    var h = document.createElement('div');
+    h.style.cssText = "font-family:'Press Start 2P',monospace;font-size:11px;color:var(--cyan);margin-bottom:8px";
+    h.textContent = title;
+    row.appendChild(h);
+    if(note){
+      var n = document.createElement('p');
+      n.style.cssText = 'font-size:14px;color:var(--dim);margin:0 0 12px';
+      n.innerHTML = note;
+      row.appendChild(n);
+    }
+    if(href){
+      var a = document.createElement('a');
+      a.className = 'btn ' + style;
+      a.style.marginLeft = '0';
+      a.href = href; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = label;
+      row.appendChild(a);
+    }
+    links.appendChild(row);
+  }
+
+  var any = false;
+
+  if (SQUARE_LINK) {
+    any = true;
+    option('PAY BY CARD (SQUARE)',
+      'Debit, credit, Apple Pay, Google Pay, or Cash App Pay. Enter <strong>$' + amt
+      + '</strong> as the amount on the Square page. You\'ll get an emailed receipt.',
+      'PAY $' + amt + ' WITH SQUARE ▸', SQUARE_LINK, 'btn-y');
+  }
+  var tierLink = (STRIPE_TIER_LINKS && STRIPE_TIER_LINKS[state.tierKey]) || '';
+  if (tierLink) {
+    // Exact-amount link: nothing to type, nothing to copy.
+    any = true;
+    option('PAY BY CARD (STRIPE)',
+      'Debit, credit, Apple Pay, or Google Pay. The <strong>$' + amt
+      + '</strong> deposit is already filled in \u2014 just complete the payment. '
+      + 'You\'ll get an emailed receipt.',
+      'PAY $' + amt + ' NOW \u25B8', tierLink, 'btn-y');
+  } else if (STRIPE_LINK) {
+    any = true;
+    option('PAY BY CARD (STRIPE)',
+      'Debit, credit, Apple Pay, or Google Pay. Enter <strong>$' + amt
+      + '</strong> as the amount on the Stripe page \u2014 use the copy button above. '
+      + 'You\'ll get an emailed receipt.',
+      'PAY $' + amt + ' WITH STRIPE \u25B8', STRIPE_LINK, 'btn-y');
+  }
+  if (ZELLE_HANDLE) {
+    any = true;
+    option('PAY BY ZELLE (NO FEES)',
+      'Send <strong>$' + amt + '</strong> to <strong>' + ZELLE_HANDLE + '</strong> from your banking app. '
+      + 'Bank-to-bank, no fees for either of us. Please put your event date in the memo.',
+      '', '', '');
+  }
+  if (PAYPAL_ME) {
+    any = true;
+    option('PAY WITH PAYPAL', '', 'PAY $' + amt + ' WITH PAYPAL ▸',
+      'https://paypal.me/' + PAYPAL_ME + '/' + amt, 'btn-o');
+  }
+  if (VENMO_USER) {
+    any = true;
+    option('PAY WITH VENMO', '', 'PAY $' + amt + ' WITH VENMO ▸',
+      'https://venmo.com/' + VENMO_USER + '?txn=pay&amount=' + amt + '&note=Arcade%20Rental%20Deposit', 'btn-o');
+  }
+  if (CASHAPP_USER) {
+    any = true;
+    option('PAY WITH CASH APP', '', 'PAY $' + amt + ' WITH CASH APP ▸',
+      'https://cash.app/$' + CASHAPP_USER + '/' + amt, 'btn-o');
+  }
+
+  if (!any) {
+    var fb = document.createElement('p');
+    fb.className = 'muted';
+    fb.style.cssText = 'margin:0;font-size:14px';
+    fb.textContent = "Your request is in — we'll email you a payment link to confirm your booking.";
+    links.appendChild(fb);
+  }
+
+  box.style.display = 'block';
+  box.scrollIntoView({behavior:'smooth', block:'center'});
+}
+</script></body></html>

@@ -1,0 +1,99 @@
+THE ARCADE RENTAL — ACTIVATING FORMS & PAYMENTS
+================================================
+Two things to fill in. Both are single-line edits at the top of the page
+scripts (or in build_site.py if you regenerate the site).
+
+--------------------------------------------------------------------
+1. WEB3FORMS  (contact, booking, and job application forms)
+--------------------------------------------------------------------
+a) Go to https://web3forms.com/
+b) Enter TheArcadeRental@gmail.com and click Create Access Key
+c) Check that inbox for the access key
+d) Replace this placeholder everywhere it appears:
+       PASTE-YOUR-WEB3FORMS-ACCESS-KEY-HERE
+   with the real key.
+   Affected files: contact.html, booking.html, careers.html,
+                   FULL-SITE-PREVIEW.html
+   (Find & Replace All in a text editor does all four at once.)
+
+That's it — no account, no server, no monthly fee. Submissions arrive as
+email in the Gmail inbox. Free tier covers 250 submissions/month.
+
+Until the real key is in, forms do NOT fail silently — they show a
+message telling the visitor to email or call instead.
+
+Each form includes a hidden anti-spam "honeypot" field. Real visitors
+never see it; bots that fill it are silently discarded.
+
+--------------------------------------------------------------------
+2. PAYMENTS  (the 50% deposit on the booking page)
+--------------------------------------------------------------------
+RECOMMENDED: SQUARE — Steve already has an account.
+
+Set it up once in Square:
+  Square Dashboard > Online Checkout > Create Payment Link
+  > choose "Accept a payment"
+  > turn ON "Let customer enter amount"
+  > Save, then copy the link (looks like https://square.link/u/XXXXXXX)
+
+Paste it into booking.html (and FULL-SITE-PREVIEW.html):
+    var SQUARE_LINK  = "https://square.link/u/XXXXXXX";
+
+Why buyer-entered amount: the deposit changes with package, extra hours,
+attendant, and delivery distance, so a fixed-price link won't work. The
+site shows the exact amount in big type with a COPY AMOUNT button, and
+the customer types it on the Square page.
+
+Square fee: 3.3% + 30c per online payment on the free plan (no monthly
+fee). The Plus plan is $49/mo and drops it to 2.9% + 30c, which only
+pays off above roughly $12,000/month in online card sales - not worth it
+at current volume. Square charges NO chargeback fee, which is unusual
+and genuinely valuable for a deposit-taking business.
+
+OPTIONAL EXTRAS - fill in any, leave blank to hide:
+
+    var ZELLE_HANDLE = "";   <- no fees at all, bank-to-bank
+    var PAYPAL_ME    = "";
+    var VENMO_USER   = "";
+    var CASHAPP_USER = "";
+
+Zelle costs nothing but cannot be embedded - the customer sends the
+amount manually from their banking app. The site displays the exact
+amount and Steve's handle. Good as a "save us both the fee" option
+next to Square.
+
+Fee comparison on a $500 deposit:
+    Zelle .................. $0
+    Venmo business ......... $9.60   (1.9% + $0.10)
+    Cash App business ...... $13.75  (2.75%)
+    Square online .......... $16.80  (3.3% + $0.30)
+    PayPal Checkout ........ $17.94  (3.49% + $0.49)
+
+Square is not the cheapest, but it is the only one here that is a real
+merchant account: proper receipts, refund handling, dispute support, and
+it accepts cards, Apple Pay, Google Pay, and Cash App Pay. For deposits
+on four-figure bookings that is usually worth the few dollars.
+
+--------------------------------------------------------------------
+IMPORTANT - READ BEFORE TAKING REAL MONEY
+--------------------------------------------------------------------
+* The deposit is calculated in the customer's browser and, with the
+  buyer-entered-amount setup, typed in by the customer. ALWAYS confirm
+  the amount received matches the quote before committing to a date.
+  This is a normal manual check at this size, but it is a real
+  limitation of any setup without a server.
+
+* Do NOT use personal PayPal Friends & Family, or a personal Venmo or
+  Cash App account, to dodge fees. It violates their terms and those
+  platforms can freeze funds or close the account over it. Losing a
+  season of deposits would cost far more than the fees.
+
+* Any of these will issue a 1099-K once Steve receives $600+ in a year.
+  This income is reportable regardless of which he picks.
+
+--------------------------------------------------------------------
+ALSO ALREADY DONE
+--------------------------------------------------------------------
+* Google Analytics (G-LNQ35H216B) — on all 26 pages
+* Google Search Console verification meta tag — on all 26 pages
+* Both only report once the site is live on the real domain.

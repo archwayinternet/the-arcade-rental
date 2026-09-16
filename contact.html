@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us – The Arcade Rental</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="alternate icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="google-site-verification" content="VptBFiOfYPE2ogj45kjB-mc92TCY7VqkBvI5ADcIv5E">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LNQ35H216B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LNQ35H216B');
+</script>
+<style>
+@font-face{font-family:'Press Start 2P';src:url('fonts/press-start-2p.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Rubik';src:url('fonts/rubik-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Rubik';src:url('fonts/rubik-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Rubik';src:url('fonts/rubik-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+</style>
+<link rel="stylesheet" href="styles.css"></head><body>
+<header class="marquee"><div class="wrap mast">
+<a class="logo" href="index.html"><svg class="pac" width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M50 50 L100 22 A50 50 0 1 0 100 78 Z" fill="#ffd23f"/></svg>
+<span class="px t">THE ARCADE RENTAL<span class="s">FUN FOR EVERYONE</span></span></a>
+<button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitenav" aria-label="Open menu"><span class="bars"></span></button>
+<nav id="sitenav" aria-label="Main"><a href="index.html">HOME</a><a href="who-we-serve.html">WHO WE SERVE</a><a href="games.html">GAMES</a><a href="rates.html">RATES</a><a href="faq.html">FAQ</a><a href="careers.html">CAREERS</a><a href="contact.html" class="on">CONTACT</a><a class="buy" href="booking.html">BOOK NOW ▸</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+<p class="eyebrow">PRESS START</p>
+<h1>ASK A QUESTION</h1>
+<p class="sub">Have a question before you book? Send it over — Steve typically replies within a day.</p>
+</div></section>
+<section><div class="wrap">
+<div class="split">
+<div class="panel">
+<h3>SEND A MESSAGE</h3>
+<form id="askForm" class="formgrid" onsubmit="return sendAsk(event)">
+  <input type="text" id="askForm_botcheck" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
+  <div class="field"><label for="q_name">YOUR NAME</label><input type="text" id="q_name" required></div>
+  <div class="field"><label for="q_email">EMAIL</label><input type="email" id="q_email" required></div>
+  <div class="field"><label for="q_phone">PHONE</label><input type="tel" id="q_phone"></div>
+  <div class="field"><label for="q_type">I'M ASKING ABOUT</label>
+    <select id="q_type"><option value="General question">General question</option><option value="Churches">Churches</option><option value="Schools">Schools</option><option value="Community Centers">Community Centers</option><option value="Daycares">Daycares</option><option value="Restaurants">Restaurants</option><option value="Salons &amp; Barbershops">Salons &amp; Barbershops</option><option value="Libraries">Libraries</option><option value="Dentists">Dentists</option><option value="Doctors &amp; Medical Offices">Doctors &amp; Medical Offices</option><option value="Family Reunions">Family Reunions</option><option value="Birthday Parties">Birthday Parties</option><option value="Church Youth Camps">Church Youth Camps</option><option value="Weddings">Weddings</option><option value="Coffee Shops">Coffee Shops</option><option value="Realtor Open Houses">Realtor Open Houses</option><option value="Office Waiting Rooms">Office Waiting Rooms</option><option value="Airbnbs &amp; Rentals">Airbnbs &amp; Rentals</option></select>
+  </div>
+  <div class="field full"><label for="q_date">EVENT DATE (IF KNOWN)</label><input type="date" id="q_date"></div>
+  <div class="field full"><label for="q_msg">YOUR QUESTION</label><textarea id="q_msg" required placeholder="Tell us about your event or business, number of guests, and any games you're curious about..."></textarea></div>
+  <div class="field full"><button class="btn btn-y" type="submit">SEND QUESTION ▸</button></div>
+</form>
+<div id="askStatus" class="note" style="display:none"></div>
+
+</div>
+<div class="ratebox"><h3>OR REACH US DIRECTLY</h3>
+<p class="contactline"><strong>Steve Hanford</strong></p>
+<p class="contactline">📧 <a href="mailto:TheArcadeRental@gmail.com">TheArcadeRental@gmail.com</a></p>
+<p class="contactline">📞 Call/text <a href="tel:5745275765">574-527-5765</a></p>
+<p class="muted">Based in North Webster, Indiana — serving Kokomo, Fort Wayne, Indianapolis and surrounding communities.</p>
+<p><a class="btn btn-y" href="booking.html">READY TO BOOK INSTEAD? ▸</a></p></div>
+</div>
+</div></section>
+<section class="cta"><div class="wrap">
+<p class="big">READY PLAYER ONE?</p>
+<p class="contactline">Contact <strong>Steve Hanford</strong> · <a href="mailto:TheArcadeRental@gmail.com">TheArcadeRental@gmail.com</a> · call/text <a href="tel:5745275765">574-527-5765</a></p>
+<p style="margin:22px 0 0"><a class="btn btn-y" href="booking.html">BOOK &amp; PAY DEPOSIT ▸</a><a class="btn btn-o" href="contact.html">ASK A QUESTION</a></p>
+</div></section>
+<footer><div class="wrap">
+<p class="px" style="font-size:9px;color:var(--yellow)">WHO WE SERVE</p>
+<ul class="flist"><li><a href="churches.html">Churches</a></li><li><a href="schools.html">Schools</a></li><li><a href="community-centers.html">Community Centers</a></li><li><a href="daycares.html">Daycares</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="salons.html">Salons &amp; Barbershops</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="dentists.html">Dentists</a></li><li><a href="doctors.html">Doctors &amp; Medical Offices</a></li><li><a href="family-reunions.html">Family Reunions</a></li><li><a href="birthdays.html">Birthday Parties</a></li><li><a href="church-youth-camps.html">Church Youth Camps</a></li><li><a href="weddings.html">Weddings</a></li><li><a href="coffee-shops.html">Coffee Shops</a></li><li><a href="open-houses.html">Realtor Open Houses</a></li><li><a href="waiting-rooms.html">Office Waiting Rooms</a></li><li><a href="airbnbs.html">Airbnbs &amp; Rentals</a></li></ul>
+<p>Based in North Webster, Indiana — serving Kokomo, Fort Wayne, Indianapolis and surrounding communities.</p>
+<p>© 2026 The Arcade Rental · Steve Hanford · <a href="mailto:TheArcadeRental@gmail.com">TheArcadeRental@gmail.com</a> · 574-527-5765</p>
+</div></footer><script>
+(function(){
+  var btn = document.querySelector('.navtoggle');
+  var nav = document.getElementById('sitenav');
+  if(!btn || !nav) return;
+  function setOpen(open){
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function(){
+    setOpen(!nav.classList.contains('open'));
+  });
+  // Tapping a link navigates, so close the panel behind it.
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A') setOpen(false);
+  });
+  // Escape closes and returns focus to the button.
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')){ setOpen(false); btn.focus(); }
+  });
+  // If the window grows to desktop width, clear the mobile state.
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 760) setOpen(false);
+  });
+})();
+</script><script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+
+var W3F_KEY = "df3a08b6-33fc-40b0-8533-03bb55202ac2";
+var EJS_PUBLIC   = "ozlngs3HBVvH0U4Z7";
+var EJS_SERVICE  = "service_svwtbil";
+var EJS_TEMPLATE = "template_joazi37";
+
+function val(id){ var el=document.getElementById(id); return el ? el.value.trim() : ''; }
+
+// Turn the field object into a readable block for the backup email path.
+function fieldsToText(fields){
+  var out = [];
+  for (var k in fields) {
+    if (fields[k]) out.push(k.replace(/_/g,' ').toUpperCase() + ': ' + fields[k]);
+  }
+  return out.join('\n');
+}
+
+function w3fOk(status, formId){
+  status.textContent = 'Thanks! Your message has been sent — we usually reply within a day.';
+  var f = document.getElementById(formId); if (f) f.reset();
+}
+function w3fFail(status){
+  status.textContent = 'Sorry, that did not send. Please email TheArcadeRental@gmail.com or call/text 574-527-5765.';
+}
+
+// BACKUP PATH — only runs if Web3Forms did not go through.
+function sendViaEmailJS(status, formId, subject, fields, replyTo){
+  if (!EJS_PUBLIC || !EJS_SERVICE || !EJS_TEMPLATE || typeof emailjs === 'undefined') {
+    w3fFail(status); return;
+  }
+  emailjs.send(EJS_SERVICE, EJS_TEMPLATE, {
+    subject: subject,
+    from_name: fields.name || fields.customer_name || fields.applicant_name || 'Website visitor',
+    reply_to: replyTo || 'TheArcadeRental@gmail.com',
+    message: fieldsToText(fields)
+  }, { publicKey: EJS_PUBLIC }).then(
+    function(){ w3fOk(status, formId); },
+    function(){ w3fFail(status); }
+  );
+}
+
+function w3fSend(statusId, formId, subject, fields, replyTo){
+  var status = document.getElementById(statusId);
+  status.style.display='block';
+
+  // Honeypot: real people leave this empty; bots fill it in.
+  if (val(formId + '_botcheck')) { return false; }
+
+  var haveW3F = W3F_KEY && W3F_KEY.indexOf('PASTE-YOUR') !== 0;
+  var haveEJS = EJS_PUBLIC && EJS_SERVICE && EJS_TEMPLATE;
+
+  if (!haveW3F && !haveEJS) {
+    status.textContent = 'This form is not connected yet. Please email TheArcadeRental@gmail.com or call/text 574-527-5765.';
+    return false;
+  }
+
+  status.textContent = 'Sending...';
+
+  // No Web3Forms key? Go straight to the backup.
+  if (!haveW3F) { sendViaEmailJS(status, formId, subject, fields, replyTo); return false; }
+
+  var payload = { access_key: W3F_KEY, subject: subject, from_name: 'The Arcade Rental Website' };
+  for (var k in fields) { if (fields[k]) payload[k] = fields[k]; }
+  if (replyTo) payload.replyto = replyTo;
+
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify(payload)
+  })
+  .then(function(r){ return r.json(); })
+  .then(function(data){
+    if (data.success) { w3fOk(status, formId); }
+    else { sendViaEmailJS(status, formId, subject, fields, replyTo); }
+  })
+  .catch(function(){ sendViaEmailJS(status, formId, subject, fields, replyTo); });
+  return false;
+}
+
+function sendAsk(e){
+  e.preventDefault();
+  return w3fSend('askStatus', 'askForm', 'New question from The Arcade Rental website', {
+    name:      val('q_name'),
+    email:     val('q_email'),
+    phone:     val('q_phone'),
+    asking_about: val('q_type'),
+    event_date: val('q_date'),
+    message:   val('q_msg')
+  }, val('q_email'));
+}
+</script></body></html>

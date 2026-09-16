@@ -1,0 +1,68 @@
+GETTING THE DEPOSIT AMOUNT TO PRE-FILL ON STRIPE
+=================================================
+THE PROBLEM
+Stripe does not allow an amount to be passed through a payment link URL.
+Their URL parameters cover email, promo codes, and reference IDs - but
+not the amount. So any "customers choose what to pay" link will always
+make the customer type the number in themselves. This is a Stripe limit,
+not something the website can work around. Square works the same way.
+
+THE FIX
+Create one FIXED-PRICE payment link per package. Then the amount is
+already filled in and the customer just completes the payment.
+
+HOW TO CREATE EACH ONE
+  1. Stripe Dashboard > Payment Links > + New
+  2. Choose "Products or subscriptions" (NOT "customers choose what to pay")
+  3. Click + Add a new product
+  4. Name it as shown below, set the price shown, one-time payment
+  5. Click Add product, then Create link
+  6. Copy the link and send it to me
+
+THE LINKS TO CREATE (deposit = 50% of package price, rounded to $10)
+
+  SINGLE-DAY PACKAGES (3 hours)
+  --------------------------------------------------------
+  Level 1 Deposit                          $    150
+  Level 2 Deposit                          $    190
+  Level 3 Deposit                          $    230
+  Level 4 Deposit                          $    270
+  Level 5 Deposit                          $    310
+  Level 6 Deposit                          $    350
+  Full Arcade Trailer Deposit              $    500
+
+  MULTI-DAY PACKAGES
+  --------------------------------------------------------
+  2-Day Weekend Deposit                    $    800
+  3-Day Event Deposit                      $  1,020
+  5-Day (Mon–Fri) Deposit                  $  1,400
+  Full Week Deposit                        $  1,700
+
+  ANNUAL / SEASON PACKAGES
+  --------------------------------------------------------
+  Quarterly Plan Deposit                   $    800
+  Season Pass Deposit                      $  1,120
+  Monthly Plan Deposit                     $  2,100
+
+START WITH THE COMMON ONES
+Fourteen links is a lot to do in one sitting. The single-day packages are
+what most customers book, so create those seven first. Multi-day and
+annual are lower volume - add them when you get to it.
+
+WHAT ABOUT ADD-ONS AND DELIVERY?
+The deposit reserves the date. Extra hours, the on-site attendant, claw
+machine fill, and mileage are settled in the final balance, due the day
+before the event. The booking email still shows the full quoted total.
+
+UNTIL YOU CREATE THEM
+Nothing breaks. Any package without its own link falls back to the
+pay-what-you-want link, where the site shows the amount in large type
+with a COPY AMOUNT button. Add links one at a time; each starts working
+as soon as it is in.
+
+REMINDER ON PRICING
+Every price in this file is a SUGGESTED figure I modeled on comparable
+regional operators - not confirmed Arcade Rental pricing. Multi-day and
+annual pricing in particular is a first draft. Review all of it before
+creating the Stripe links, because the link amounts have to match what
+the website quotes.
