@@ -292,6 +292,7 @@ body.offer .cta .contactline{margin:0}
   .offer-card .btn{padding:12px 8px}
   .offer-card .smslink{margin-top:6px;font-size:14px}
   body.offer .offer-options .note{margin:12px 0 0}
+  .offer-fine{margin:12px 0 0}
   body.offer .cta{padding:16px 0}
   body.offer .cta .contactline{font-size:15px}
 }
@@ -316,6 +317,7 @@ body.offer .cta .contactline{margin:0}
 .offer-card .smslink{display:block;text-align:center;margin-top:10px;font-size:15px}
 .offer-card .btn[hidden],.offer-card .smslink[hidden]{display:none}
 body.offer .offer-options .note{margin:22px 0 0}
+.offer-fine{margin:16px 0 0;font-size:13px;line-height:1.45;color:var(--dim)}
 @media (prefers-reduced-motion:reduce){
   .offer-card,.offer-card:hover{transition:none;transform:none}
 }
