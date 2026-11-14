@@ -20,33 +20,17 @@
   package name filled in, and "or text Steve" stays visible (sms to
   574-527-5765, same package name). Nothing 404s while links are missing.
 
-  Pages with no flyer price (christmas-party, gaming-room) use the same
-  slots. Leave them as PLACEHOLDER and the buttons stay
-  "Request a date" / "Ask about availability". Drop in a Payment Link
-  later if you add a price, and that button becomes BUY.
-
-  tv-advertising → "three-events" is the free-with-3-events contact
-  option. Leave it as PLACEHOLDER unless you later charge for it.
+  christmas-party has no flyer price. Leave family-party as PLACEHOLDER
+  and the button stays "Request a date". Drop in a Payment Link later
+  if you add a price, and that button becomes BUY.
 
   OPTION KEYS
-  membership        player-pass | unlimited-pass | family-unlimited
   birthday          classic | power-up | ultimate
   corporate         team-pass | team-builder | ultimate-team
   church-youth      good | better | best
   christmas-party   family-party
-  gaming-room       gaming-nights | streaming | dnd | birthdays
-  tv-advertising    monthly | three-events
-  barcade           3-games | 7-games | 12-games
 */
 window.ARCADE_PAYMENT_LINKS = {
-  membership: {
-    // Player Pass — $24.99/month
-    "player-pass": "PLACEHOLDER",
-    // Unlimited Pass — $39.99/month
-    "unlimited-pass": "PLACEHOLDER",
-    // Family Unlimited — $129.99/month
-    "family-unlimited": "PLACEHOLDER"
-  },
   birthday: {
     // Level 1 Classic Gamer Party — $200
     "classic": "PLACEHOLDER",
@@ -74,27 +58,6 @@ window.ARCADE_PAYMENT_LINKS = {
   "christmas-party": {
     // No price on the flyer. Request a date until a link is pasted.
     "family-party": "PLACEHOLDER"
-  },
-  "gaming-room": {
-    // No prices on the flyer. Ask about availability until links are pasted.
-    "gaming-nights": "PLACEHOLDER",
-    "streaming": "PLACEHOLDER",
-    "dnd": "PLACEHOLDER",
-    "birthdays": "PLACEHOLDER"
-  },
-  "tv-advertising": {
-    // Monthly in-house TV ad — $50/month
-    "monthly": "PLACEHOLDER",
-    // Free advertising with 3 events in 12 months — contact, not a charge
-    "three-events": "PLACEHOLDER"
-  },
-  barcade: {
-    // 3 games — $100/month
-    "3-games": "PLACEHOLDER",
-    // 7 games — $200/month
-    "7-games": "PLACEHOLDER",
-    // 12 games — $300/month
-    "12-games": "PLACEHOLDER"
   }
 };
 
