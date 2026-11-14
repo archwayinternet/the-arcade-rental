@@ -25,7 +25,7 @@
 <a class="logo" href="index.html"><svg class="pac" width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M50 50 L100 22 A50 50 0 1 0 100 78 Z" fill="#ffd23f"/></svg>
 <span class="px t">THE ARCADE RENTAL<span class="s">FUN FOR EVERYONE</span></span></a>
 <button class="navtoggle" type="button" aria-expanded="false" aria-controls="sitenav" aria-label="Open menu"><span class="bars"></span></button>
-<nav id="sitenav" aria-label="Main"><a href="index.html">HOME</a><a href="who-we-serve.html" class="on">WHO WE SERVE</a><a href="games.html">GAMES</a><a href="rates.html">RATES</a><a href="faq.html">FAQ</a><a href="careers.html">CAREERS</a><a href="contact.html">CONTACT</a><a class="buy" href="booking.html">BOOK NOW ▸</a></nav></div></header>
+<nav id="sitenav" aria-label="Main"><a href="index.html">HOME</a><a href="who-we-serve.html" class="on">WHO WE SERVE</a><a href="games.html">GAMES</a><a href="rates.html">RATES</a><a href="faq.html">FAQ</a><a href="careers.html">CAREERS</a><a href="contact.html">CONTACT</a><div class="navdrop"><button type="button" class="navdrop-btn" aria-expanded="false" aria-haspopup="true" aria-controls="pkgmenu">PACKAGES</button><div class="navdrop-menu" id="pkgmenu"><a href="birthday/">Birthday Parties</a><a href="corporate/">Corporate Events</a><a href="church-youth/">Church Youth Night</a><a href="christmas-party/">Christmas Party</a></div></div><a class="buy" href="booking.html">BOOK NOW ▸</a></nav></div></header>
 
 <section class="hero"><div class="wrap hero-grid">
 <div>
@@ -100,7 +100,34 @@ The Arcade Rental places a classic arcade game in your shop for just $100/month.
   });
   // If the window grows to desktop width, clear the mobile state.
   window.addEventListener('resize', function(){
-    if(window.innerWidth > 760) setOpen(false);
+    if(window.innerWidth > 760){
+      setOpen(false);
+      closeDrops();
+    }
+  });
+  function closeDrops(){
+    var menus = nav.querySelectorAll('.navdrop');
+    for(var i=0;i<menus.length;i++){
+      menus[i].classList.remove('open');
+      var b = menus[i].querySelector('.navdrop-btn');
+      if(b) b.setAttribute('aria-expanded','false');
+    }
+  }
+  var dropBtns = nav.querySelectorAll('.navdrop-btn');
+  for(var d=0;d<dropBtns.length;d++){
+    dropBtns[d].addEventListener('click', function(e){
+      e.stopPropagation();
+      var wrap = this.parentNode;
+      var willOpen = !wrap.classList.contains('open');
+      closeDrops();
+      if(willOpen){
+        wrap.classList.add('open');
+        this.setAttribute('aria-expanded','true');
+      }
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeDrops();
   });
 })();
 </script><script>
