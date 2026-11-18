@@ -29,8 +29,21 @@
   corporate         team-pass | team-builder | ultimate-team
   church-youth      good | better | best
   christmas-party   good | better | best
+  party-packages    3-games | 7-games | 12-games | trailer | outdoor-games
 */
 window.ARCADE_PAYMENT_LINKS = {
+  "party-packages": {
+    // 3 Games — $100 per party
+    "3-games": "PLACEHOLDER",
+    // 7 Games — $200 per party
+    "7-games": "PLACEHOLDER",
+    // 12 Games — $300 per party
+    "12-games": "PLACEHOLDER",
+    // Arcade Trailer — $250 per event
+    "trailer": "PLACEHOLDER",
+    // Outdoor Games Package — $100
+    "outdoor-games": "PLACEHOLDER"
+  },
   birthday: {
     // Level 1 Classic Gamer Party — $200
     "classic": "PLACEHOLDER",
